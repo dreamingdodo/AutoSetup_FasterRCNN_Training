@@ -9,7 +9,7 @@ pip3 install --disable-pip-version-check --no-input torch torchvision torchaudio
 top_dir=$(pwd)
 cd data || exit
 git clone -b train-val https://github.com/aleksandar-aleksandrov/groceries-object-detection-dataset.git
-cd groceries-object-detection-dataset/dataset/ || exit
+cd groceries-object-detection-dataset/data/ || exit
 dataset_dir=$(pwd)
 cd train/annotations || exit
 mv cake/* candy/* cereal/* chips/* chocolate/* coffee/* corn/* fish/* flour/* honey/* jam/* juice/* milk/* nuts/* oil/* pasta/* rice/* soda/* spices/* sugar/* tea/* tomato_sauce/* vinegar/* water/* beans/* .
